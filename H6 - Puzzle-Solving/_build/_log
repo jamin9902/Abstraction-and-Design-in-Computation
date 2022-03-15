@@ -1,0 +1,41 @@
+### Starting build.
+# Target: experiments.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:experiments.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules experiments.ml > experiments.ml.depends
+# Target: collections.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:collections.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules collections.ml > collections.ml.depends # cached
+# Target: collections.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:collections.cmo, file:collections.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o collections.cmo collections.ml # cached
+# Target: mazes.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:mazes.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules mazes.ml > mazes.ml.depends # cached
+# Target: draw.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:draw.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules draw.ml > draw.ml.depends # cached
+# Target: draw.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:draw.cmo, file:draw.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o draw.cmo draw.ml # cached
+# Target: puzzledescription.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:puzzledescription.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules puzzledescription.ml > puzzledescription.ml.depends # cached
+# Target: puzzledescription.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:puzzledescription.cmo, file:puzzledescription.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o puzzledescription.cmo puzzledescription.ml # cached
+# Target: mazes.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:mazes.cmo, file:mazes.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o mazes.cmo mazes.ml # cached
+# Target: puzzlesolve.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:puzzlesolve.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules puzzlesolve.ml > puzzlesolve.ml.depends # cached
+# Target: puzzlesolve.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:puzzlesolve.cmo, file:puzzlesolve.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o puzzlesolve.cmo puzzlesolve.ml # cached
+# Target: tiles.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:tiles.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules tiles.ml > tiles.ml.depends # cached
+# Target: tiles.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:tiles.cmo, file:tiles.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o tiles.cmo tiles.ml # cached
+# Target: experiments.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:experiments.cmo, file:experiments.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o experiments.cmo experiments.ml
++ ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o experiments.cmo experiments.ml
+File "experiments.ml", line 67, characters 17-29:
+67 |   let (dfs_path, dfs_expanded) =
+                      ^^^^^^^^^^^^
+Warning 27: unused variable dfs_expanded.
+File "experiments.ml", line 119, characters 13-17:
+119 |   let module DFSG = DFSSolver(Puzzle) in
+                   ^^^^
+Warning 60: unused module DFSG.
+# Target: experiments.byte, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, dont_link_with, extension:byte, file:experiments.byte, link, ocaml, program, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -linkpkg str.cma -thread -package graphics -package CS51Utils collections.cmo draw.cmo puzzledescription.cmo mazes.cmo puzzlesolve.cmo tiles.cmo experiments.cmo -o experiments.byte
+# Compilation successful.

@@ -1,0 +1,8 @@
+### Starting build.
+# Target: expressionLibrary.ml.depends, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), extension:ml, file:expressionLibrary.ml, ocaml, ocamldep, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamldep -package graphics -package CS51Utils -modules expressionLibrary.ml > expressionLibrary.ml.depends # cached
+# Target: expressionLibrary.cmo, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, compile, extension:cmo, extension:ml, file:expressionLibrary.cmo, file:expressionLibrary.ml, implem, ocaml, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -c -thread -strict-sequence -package graphics -package CS51Utils -w A-4-33-40-41-42-43-34-44 -o expressionLibrary.cmo expressionLibrary.ml # cached
+# Target: expressionLibrary.byte, tags: { package(CS51Utils), package(graphics), warn(A-4-33-40-41-42-43-34-44), byte, dont_link_with, extension:byte, file:expressionLibrary.byte, link, ocaml, program, quiet, strict-sequence, thread, traverse, use_str }
+ocamlfind ocamlc -linkpkg str.cma -thread -package graphics -package CS51Utils expressionLibrary.cmo -o expressionLibrary.byte # cached
+# Compilation successful.
